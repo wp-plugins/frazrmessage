@@ -119,10 +119,10 @@ function get_frazr_badge() {
   $msg = get_option($_opt_frazr_msg);
   $img = get_option($_opt_frazr_img);
   if ($img == '') { 
-    $img = 'wp-content/plugins/frazr_message/frazr_user_img.png'; 
+    $img = 'wp-content/plugins/frazrmessage/frazr_user_img.png'; 
   }
-  $logo = 'wp-content/plugins/frazr_message/frazr_logo.png'; 
-  $balloon = 'wp-content/plugins/frazr_message/sprechblase.png';
+  $logo = 'wp-content/plugins/frazrmessage/frazr_logo.png'; 
+  $balloon = 'wp-content/plugins/frazrmessage/sprechblase.png';
   // HTML code for 250 pixels wide frazr badge
   ?>
   

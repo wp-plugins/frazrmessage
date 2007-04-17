@@ -27,6 +27,14 @@ The last fraze will be shown without formatting. You could insert the function i
 Extract the file to a local folder. Then follow these steps.
 
 1. Upload the folder `frazrmessage` to your plugin directory `/wp-content/plugins/`
+
+Now you should find these files inside you `/wp-content/plugins/frazrmessage` folder
+* `frazr_message.php`
+* `readme.txt`
+* `gpl.txt`
+* `frazr_user_img.png`
+* `sprechblase.png`
+
 2. Activate the plugin Admin -> Plugins
 3. Update the configuration in the Options -> Frazr Message tab
 * Input your Frazr username (your login name)
