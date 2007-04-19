@@ -3,7 +3,7 @@
 Plugin Name: Frazr Message
 Plugin URI: http://wordpress.org/extend/plugins/frazrmessage/
 Description: A plug-in to show the last frazr fraze for a user. Rewritten from <a href="http://www.sleepydisco.co.uk/" title="David Wood">David Woods</a> Simpletwitter. 
-Version: 0.2.2
+Version: 0.2.3
 Author: Joerg Kanngiesser
 Author URI: http://novaforce.org/blog/
 */
