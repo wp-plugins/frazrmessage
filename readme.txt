@@ -3,7 +3,7 @@ Contributors: derletzteschrei
 Tags: frazr,frazrmessage,rss,feed,badge
 Requires at least: 2.0.5
 Tested up to: 2.1.3
-Stable tag: 0.2.2
+Stable tag: 0.2.3
 
 Rewritten plugin (SimpleTwitter) for showing the recent message from a frazr account.
 
@@ -21,6 +21,7 @@ The last fraze will be shown without formatting. You could insert the function i
 * 0.2 Added 2 pictures into this package. New function is available for creating a complete frazr badge.
 * 0.2.1 Package failure installation instructions corrected.
 * 0.2.2 Fixed Problem with Permalinks Hack
+* 0.2.3 Rewritten HTML code - new graphics
 
 == Installation ==
 
@@ -45,7 +46,7 @@ Extract the file to a local folder. Then follow these steps.
 Edit your theme by putting in `<?php get_frazr_msg(); ?>` where you like to have the messages to be shown. It is a simple plain text message.
 
 = Frazr Badge with Balloon Text =
-Now you can add a complete badge to your Wordpress blog by using `<?php get_frazr_badge(); ?>`. Just put it into your theme where you like to have it.
+Now you can add a complete badge to your Wordpress blog by using `<?php get_frazr_badge(); ?>`. Just put it into your theme where you like to have it. Creates a 250 x 130 badge with user-defined picture (48x48).
 
 Have fun
 
