@@ -3,7 +3,7 @@ Contributors: derletzteschrei
 Tags: frazr,frazrmessage,rss,feed,badge
 Requires at least: 2.0.5
 Tested up to: 2.1.3
-Stable tag: 0.2.3
+Stable tag: 0.3
 
 Rewritten plugin (SimpleTwitter) for showing the recent message from a frazr account.
 
@@ -22,6 +22,7 @@ The last fraze will be shown without formatting. You could insert the function i
 * 0.2.1 Package failure installation instructions corrected.
 * 0.2.2 Fixed Problem with Permalinks Hack
 * 0.2.3 Rewritten HTML code - new graphics
+* 0.3 Added URL parser for the badge. IE bug fixed.
 
 == Installation ==
 

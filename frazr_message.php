@@ -3,7 +3,7 @@
 Plugin Name: Frazr Message
 Plugin URI: http://wordpress.org/extend/plugins/frazrmessage/
 Description: A plug-in to show the last frazr fraze for a user. Rewritten from <a href="http://www.sleepydisco.co.uk/" title="David Wood">David Woods</a> Simpletwitter. 
-Version: 0.2.3
+Version: 0.3
 Author: Joerg Kanngiesser
 Author URI: http://novaforce.org/blog/
 */
@@ -118,6 +118,17 @@ function get_frazr_badge() {
   $usr = get_option($_opt_frazr_id);
   $msg = get_option($_opt_frazr_msg);
   $img = get_option($_opt_frazr_img);
+  
+  $msg_cache = explode(" ", $msg);
+  $i = 1;
+  while ($i <= count($msg_cache)) {
+    $i = $i + 1; 
+    if(eregi('http://', $msg_cache[$i]))
+      $msg_cache[$i] = '<a href="'.$msg_cache[$i].'" title="Frazr Link" target="_blank">'.$msg_cache[$i].'</a> ';
+  }
+    
+  $msg = implode(" ", $msg_cache);
+  
   if ($img == '') { 
     $img = get_option('siteurl').'/wp-content/plugins/frazrmessage/frazr_user_img.png'; 
   }
@@ -131,7 +142,7 @@ function get_frazr_badge() {
   <td valign="top" height="130" background="<?php echo $balloon; ?>" style="background-repeat:no-repeat;">
     <div style="float:left;padding-left:10px;padding-right:7px;padding-top:10px;"><a href="http://www.frazr.de/u/<?php echo $usr; ?>" title="<?php echo $usr; ?> bei frazr" target="_blank">
     <img src="<?php echo $img; ?>" width="48" height="48" border="0" alt="<?php echo $usr; ?> bei frazr"/></a></div>
-    <div style="padding-left:11px;padding-top:7px;padding-right:12px;padding-bottom:5px;font-family:Arial;font-size:12px;color:#000000;"><?php echo $msg; ?></div>
+    <div style="padding-left:11px;padding-top:7px;padding-right:12px;padding-bottom:5px;font-family:Arial;font-size:12px;color:#000000;text-align:left;"><?php echo $msg; ?></div>
   </td>
 </tr>
 </table> 
